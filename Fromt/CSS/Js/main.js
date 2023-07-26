@@ -1,11 +1,16 @@
-function createBox(start, end) {
-    document.write(`<div>`);
-    document.write(`<select>`);
-    for (let i = start; i <= end; i++) {
-        document.write(`<option value="${i}">${i}</option>`);
-    }
-    document.write(`</select>`);
-    document.write(`</div>`);
-}
+for (let i = 0; i < 10; i++) {
+    let E = document.createElement("div");
+    let head = document.createElement("h2");
+    let des = document.createElement("p");
 
-createBox(2000, 2021);
+    let headText = document.createTextNode(`product ${i + 1}`);
+    let desText = document.createTextNode(`this is the best product ${i + 1}`);
+
+    head.appendChild(headText);
+    des.appendChild(desText);
+
+    E.appendChild(head);
+    E.appendChild(des);
+
+    document.body.appendChild(E);
+}
