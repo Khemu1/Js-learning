@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.cont {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 76px;
+    background-color: #eee;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 10px;
+}
+.colors,
+.size,
+.main-fonts {
+    background-color: black;
+    color: white;
+}
+option[font-type="Open"] {
+    font-family: "Open Sans", sans-serif;
+}
+option[font-type="Cairo"] {
+    font-family: "Cairo", sans-serif;
+}
+option[font-type="Roboto"] {
+    font-family: "Roboto", sans-serif;
+}
+
+option[data-color="Red"] {
+    color: red;
+}
+option[data-color="Green"] {
+    color: Green;
+}
+option[data-color="Blue"] {
+    color: Blue;
+}
+option[data-color="Orange"] {
+    color: Orange;
+}
+option[data-color="Pink"] {
+    color: Pink;
+}
+option[data-color="Yellow"] {
+    color: Yellow;
+}
+.effect {
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+    font-family: "Open Sans", sans-serif;
+}
